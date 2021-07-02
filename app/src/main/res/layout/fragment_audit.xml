@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <FrameLayout android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="2dp"
+            android:layout_height="?attr/actionBarSize">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:background="@color/white"
+                    android:id="@+id/toolbara"
+                    app:titleTextColor="@color/colorPrimary1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+                <TextView
+                    android:id="@+id/first"
+                    android:layout_width="84dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/light"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <!-- add RadioGroup which contain the many RadioButton-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/first"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/availability_of_enough_light_to_see_around_you"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:layout_marginTop="51dp"
+                    android:id="@+id/groupradio1"
+                    android:layout_below="@id/first"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+
+                    <RadioButton
+                        android:id="@+id/radia_id1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/little"
+                        android:textColor="@drawable/selector"
+
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/radia_id2"
+                        android:textColor="@drawable/selector"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/none"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id3"
+                        android:textColor="@drawable/selector"
+                        android:text="@string/enough"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:textColor="@drawable/selector"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id4"
+                        android:text="@string/bright"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/visibility"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/secon"
+                    android:layout_below="@id/groupradio1"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="@string/vendors_shops_building_entrances_window_and_balconies_from_where_you_can_be_seen"
+                    android:layout_below="@id/secon"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18dp"/>
+
+                <!-- add RadioGroup which contain the many RadioButton-->
+                <RadioGroup
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/groupradio2"
+                    android:layout_below="@id/secon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id5"
+                        android:text="@string/no_eyes"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radia_id6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/few_eyes"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id7"
+                        android:text="@string/more_eyes"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id8"
+                        android:text="@string/highly_visible"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transport"
+                    android:id="@+id/thir"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@id/groupradio2"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/availability_of_public_transport_like_metro_buses_autos_richshaws"
+                    android:layout_below="@id/thir"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"/>
+
+                <!-- add RadioGroup which contain the many RadioButton-->
+                <RadioGroup
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/groupradio3"
+                    android:layout_below="@id/thir"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id9"
+                        android:text="@string/unavailable"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radia_id10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@drawable/selector"
+                        android:text="@string/distant"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id11"
+                        android:textColor="@drawable/selector"
+                        android:text="@string/nearby"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id12"
+                        android:textColor="@drawable/selector"
+                        android:text="@string/very_close"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/security"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/four"
+                    android:layout_below="@id/groupradio3"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/presence_of_police_or_security_guards_around_you"
+                    android:layout_below="@id/four"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"/>
+
+                <!-- add RadioGroup which contain the many RadioButton-->
+                <RadioGroup
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/groupradio4"
+                    android:layout_below="@id/four"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id13"
+                        android:text="@string/none"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radia_id14"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/minimal"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id15"
+                        android:text="@string/moderate"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id16"
+                        android:text="@string/high"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/people"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/five"
+                    android:textStyle="bold"
+                    android:layout_below="@id/groupradio4"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/availability_of_public_transport_like_metro_buses_autos_richshaws"
+                    android:layout_below="@id/five"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"/>
+
+                <!-- add RadioGroup which contain the many RadioButton-->
+                <RadioGroup
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/groupradio5"
+                    android:layout_below="@id/five"
+                    android:textColor="#C8E6C9"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id17"
+                        android:textColor="@drawable/selector"
+                        android:text="@string/deserted"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radia_id18"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/few_people"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id19"
+                        android:text="@string/some_crowd"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id20"
+                        android:textColor="@drawable/selector"
+                        android:text="@string/crowded"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/gender_usage"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/six"
+                    android:layout_below="@id/groupradio5"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/presence_of_women_and_children_around_you"
+                    android:layout_below="@id/six"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"/>
+
+                <!-- add RadioGroup which contain the many RadioButton-->
+                <RadioGroup
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/groupradio6"
+                    android:layout_below="@id/six"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id21"
+                        android:textColor="@drawable/selector"
+                        android:text="@string/not_diverse"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radia_id22"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/somewhat_diverse"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id23"
+                        android:text="@string/fairly_diverse"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id24"
+                        android:text="@string/diverse"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/feeling"
+                    android:id="@+id/sev"
+                    android:textColor="#FFFFFF"
+                    android:layout_below="@id/groupradio6"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_safe_do_you_feel_in_your_location_or_area"
+                    android:layout_below="@id/sev"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/eig"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"/>
+
+                <!-- add RadioGroup which contain the many RadioButton-->
+                <RadioGroup
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/groupradio7"
+                    android:layout_below="@+id/sev"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id25"
+                        android:text="@string/frightening"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radia_id26"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/uncomfortable"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id27"
+                        android:text="@string/acceptable"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+
+                    <RadioButton
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id28"
+                        android:text="@string/comfortable"
+                        android:textColor="@drawable/selector"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s_u_b_m_i_t"
+                    android:id="@+id/submit"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary1"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_below="@id/groupradio7"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/btn_rounded_white"
+                    />
+
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>

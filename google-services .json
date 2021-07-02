@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "61904598999",
+    "firebase_url": "https://tsap-92d6f.firebaseio.com",
+    "project_id": "tsap-92d6f",
+    "storage_bucket": "tsap-92d6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61904598999:android:c8241e732c39d108797d92",
+        "android_client_info": {
+          "package_name": "com.example.newtsap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61904598999-5jmvn4lbnqndpvvvlqqg5v2rpjj2dfjc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.newtsap",
+            "certificate_hash": "62f84ac8a33d16d6515efffc26bbd6685b557983"
+          }
+        },
+        {
+          "client_id": "61904598999-olb624g20a4ca48irfane1qlhjitpqop.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnui5unFIIpKOQmXaedyhnSyo9pGMPq4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61904598999-olb624g20a4ca48irfane1qlhjitpqop.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

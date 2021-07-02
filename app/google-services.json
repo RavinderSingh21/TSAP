@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "827023851402",
+    "firebase_url": "https://tsap-major.firebaseio.com",
+    "project_id": "tsap-major",
+    "storage_bucket": "tsap-major.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827023851402:android:cd6fcb1c84c3702fedd273",
+        "android_client_info": {
+          "package_name": "com.example.newtsap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827023851402-pc96oqifh79q9ulge6gfih7t2i50e38b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVVWy5v3uCMI2NPX1xxVIhtNNMkUw3IMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827023851402-pc96oqifh79q9ulge6gfih7t2i50e38b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827023851402:android:a81647a7bfaad876edd273",
+        "android_client_info": {
+          "package_name": "com.example.tsap_major"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827023851402-nnk4110cpd1qbuvudt96pqlaat75h9mi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tsap_major",
+            "certificate_hash": "62f84ac8a33d16d6515efffc26bbd6685b557983"
+          }
+        },
+        {
+          "client_id": "827023851402-pc96oqifh79q9ulge6gfih7t2i50e38b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVVWy5v3uCMI2NPX1xxVIhtNNMkUw3IMQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827023851402-pc96oqifh79q9ulge6gfih7t2i50e38b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
